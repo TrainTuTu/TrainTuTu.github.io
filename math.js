@@ -30,18 +30,18 @@ function getID(i) {
     var d = getID("D");
     d.innerHTML = D.toString();
     if (D < 0) {
-      nos.innerHTML = "Phương trình ax^2 + bx + c = 0 vô nghiệm ∀x ∈ R";
+      nos.innerHTML = "Phương trình vô nghiệm ∀x ∈ R";
     } 
     else if (D == 0) {
       var S = (-b / (2 * a)).toFixed(2);
-      nos.innerHTML = "Phương trình ax^2 + bx + c = 0 có nghiệm kép: "
+      nos.innerHTML = "Phương trình có nghiệm kép: "
       s1.style.display = "inline"
       s1.innerHTML = "x = " + S.toString();
     } 
     else {
       var S1 = (( -b - Math.sqrt(D) ) / (2 * a)).toFixed(2),
           S2 = (( -b + Math.sqrt(D) ) / (2 * a)).toFixed(2);
-      nos.innerHTML = "Phương trình ax^2 + bx + c = 0 có 2 nghiệm phân biệt x1, x2 :"  
+      nos.innerHTML = "Phương trình có 2 nghiệm phân biệt x1, x2 :"  
       s1.style.display = "inline";
       s2.style.display = "inline";
       s1.innerHTML = "x = " + S1.toString();
