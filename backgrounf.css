@@ -29,8 +29,8 @@ button {
   width: 25%;
   margin: 30px auto;
   padding: 10px 15px;
-  background-color: silver;
-  border: none;
+  background-color: #256bbe;
+  border: thick;
   color: black;
   cursor: pointer;
 }
