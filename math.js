@@ -4,10 +4,14 @@ function getID(i) {
   function getVal(i) {
     return getID(i).value;
   }
+$('input.float').on('input', function() {
+  this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
+});
   function solve() {
     var a = parseFloat( getVal("a") ).toFixed(2),
         b = parseFloat( getVal("b") ).toFixed(2),
         c = parseFloat( getVal("c") ).toFixed(2);
+        class = "float";
     var D = (b*b - 4 * a * c).toFixed(2);	
     var dis = getID("DIS"),
         nos = getID("NOS"),
