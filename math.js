@@ -33,6 +33,7 @@ function getCursorPosition(element) {
         return rc.text.length;
     }
     return 0;
+}
   
   //Input a, b, c
 function getID(i) {
