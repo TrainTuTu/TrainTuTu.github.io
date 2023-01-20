@@ -1,3 +1,7 @@
+$('input.float').on('input', function() {
+  this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
+});
+
 function getID(i) {
     return document.getElementById(i);
   }
@@ -5,9 +9,9 @@ function getID(i) {
     return getID(i).value;
   }
   function solve() {
-    var a = parseFloat( getVal("a") ).toFixed(2),
-        b = parseFloat( getVal("b") ).toFixed(2),
-        c = parseFloat( getVal("c") ).toFixed(2);
+    var a = parseFloat( getVal("a") );
+        b = parseFloat( getVal("b") );
+        c = parseFloat( getVal("c") );
     var D = (b*b - 4 * a * c).toFixed(2);	
     var dis = getID("DIS"),
         nos = getID("NOS"),
